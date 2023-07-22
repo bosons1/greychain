@@ -16,8 +16,6 @@ def scrape_data(url):
         scraped_data = []
 
         # Extract data from the current page
-        # ... (your code here to extract the relevant data from the soup object)
-
         # Find all hyperlinks on the page
         links = soup.find_all('a', href=True)
 
@@ -54,10 +52,7 @@ def search_api():
 
     results = []
     # Loop through the scraped data and check for the search_text
-    # ... (your code here to search for the text in the scraped data)
-
     return jsonify({'results': results}), 200
 
 if __name__ == '__main__':
     app.run()
-
